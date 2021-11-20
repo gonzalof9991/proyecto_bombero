@@ -1,0 +1,72 @@
+body {
+    font-family: 'Lora';
+    background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("https://bomberosquilpue.cl/wp-content/uploads/2015/12/u11.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 13%;
+}
+
+.div-footer {
+    padding-top: 5%;
+}
+
+.img-logo {
+    width: 15%;
+    margin-left: 42%;
+    padding-top: 2%;
+}
+
+.col-login {
+    background-color: #ffffff;
+    margin-top: 5%;
+    border-radius: 2rem;
+    padding-bottom: 10%;
+    margin-bottom: 5%;
+}
+
+.form-control {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    transition: all 0.5s ease;
+}
+
+.btn-login {
+    background-color: #214090;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.btn-login:hover {
+    background-color: #ffffff;
+    color: #214090;
+}
+
+.a-login {
+    text-decoration: none;
+    color: #214090;
+    text-align: center;
+    padding-left: 34%;
+    transition: all 0.3s ease;
+}
+
+.a-login:hover {
+    color: #9b5252;
+    text-decoration: none;
+}
+
+footer {
+    background-color: azure;
+    height: 15rem;
+}
