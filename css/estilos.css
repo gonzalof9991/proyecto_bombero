@@ -27,7 +27,7 @@ body {
 
 .col-login {
     background-color: #ffffff;
-    margin-top: 5%;
+    margin-top: -8%;
     border-radius: 2rem;
     padding-bottom: 10%;
     margin-bottom: 5%;
@@ -37,7 +37,6 @@ body {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     border-radius: 1rem;
-    margin-bottom: 5%;
     margin-top: 5%;
     transition: all 0.5s ease;
 }
@@ -69,4 +68,9 @@ body {
 footer {
     background-color: azure;
     height: 15rem;
+}
+
+p{
+    margin:0;
+    padding-left: 7px;
 }

@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="css/estilos.css">
 
-    <title>Login | Primera Compañia Quilpue</title>
+    <title>Login | SGV Primera Compañía</title>
 </head>
 
 <body>
@@ -30,17 +30,19 @@
 
         <!-- Section -->
         <section>
+    
             <article>
                 <div class="row">
                     <div class="col-3"></div>
                     <div class="col col-login">
-
-                        <input class="form-control" name="usuario" type="text" placeholder="Ingresa tu usuario" title="Usuario">
-                        <input title="Usuario" class="form-control" name="pass" type="password" placeholder="Ingresa tu contraseña">
-
-                        <a href="index.html" class=" text-decoration-none">
-                            <button type="button" class="form-control btn-login">Iniciar sesion</button>
-                        </a>
+                        
+                        <input id="usuario" class="form-control" required name="usuario" type="text" placeholder="Ingresa tu usuario" title="Usuario">
+                        <p id="p-msg-1"></p>
+                        <input id="pass" title="Contraseña" required class="form-control" name="pass" type="password" placeholder="Ingresa tu contraseña">
+                        <p id="p-msg-2"></p>
+                       
+                        <button type="button" onclick="validar()" class="form-control btn-login">Iniciar sesion</button>
+                        
                         <a href="index.html" class="a-login">Olvidaste tu contraseña?</a>
 
                     </div>
@@ -68,7 +70,7 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
+    <script src="js/script.js"></script>
 
 </body>
 

@@ -1,0 +1,57 @@
+
+
+
+
+#opcion{
+    width: 16px;
+}
+
+.col-agregar{
+    background-color: #343a40;
+    width: 14rem;
+    height: 17rem;
+    padding-top: 2%;
+    margin-bottom: 5%;
+}
+
+.row-agregar{
+    margin-top: 4%;
+}
+
+input, .tipo-U, .com{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #343a40;
+    margin-bottom: 5%;
+    color: white;
+}
+th,td{
+    border:solid 1px rgb(245, 245, 245);
+    padding: 5px;
+    text-align: center;
+}
+
+td:hover{
+    background-color: #f8f8f8;
+    color: #898d91;
+    cursor: pointer;
+}
+
+.btn-ficha{
+    margin-top: 3%;
+}
+
+.btn{
+    background-color: green;
+    color: white;
+}
+
+.btn:hover{
+    background-color: #0c193b;
+    color: white;
+}
