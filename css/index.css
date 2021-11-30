@@ -7,17 +7,8 @@
     margin: 1rem;
 }
 
-footer {
-    background-color: #343a40;
-    height: 30vh;
-}
-
-.p-footer {
-    color: white;
-}
-
-.div-footer {
-    padding-top: 5%;
+nav{
+    background: white;
 }
 
 header {
@@ -32,4 +23,21 @@ header {
 .img-jumbo {
     width: 60%;
     border-radius: 2rem;
+}
+
+#img-menu{
+    height: 15px;
+    width: 15px;
+}
+
+.nav-item a{
+    color: #1f3e8f;
+    transition: all 0.5 ease;
+}
+
+.nav-item a:hover{
+    background: #1f3e8f;
+    border-radius: 1rem;
+    color: white;
+    text-align: center;
 }
