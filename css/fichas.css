@@ -67,7 +67,6 @@ td:hover{
 
 section article{
     transition: all 0.3s ease;
-    background-color: #fff;
     margin: 1rem;
     border-radius: 0.5rem;
     padding: 0.25rem 0;
@@ -100,8 +99,15 @@ footer a:hover{
     width: 70%;
 }
 
-.btn-list{
+.btn-list, .btn-crear{
     color: white;
+    background: #214090;
+    transition: all 0.4s ease;
+}
+
+.btn-crear:hover{
+    background-color: white;
+    color: #214090;
 }
 
 h5{
@@ -126,4 +132,13 @@ h5{
 
 .modal-title{
     color: white;
+}
+
+.label-option{
+    margin-top: 3%;
+}
+
+#body-msg{
+    text-align: center;
+    font-size: 25px;
 }

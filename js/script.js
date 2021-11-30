@@ -71,7 +71,7 @@ crearFila = (rut,pnom,appat,apmat,direc,ciudad,fecnac,comp,fecin,reg,cargo,estad
     return `
     
     <tr>
-        <th> <button class="form-control bg-primary btn-list" > ${rut} </button> </th>
+        <th> <button class="form-control  btn-list" > ${rut} </button> </th>
         <td>${pnom}</td>
         <td>${appat}</td>
         <td>${apmat}</td>
@@ -86,11 +86,15 @@ crearFila = (rut,pnom,appat,apmat,direc,ciudad,fecnac,comp,fecin,reg,cargo,estad
         <td>
             <div class="row">
                  <div class="col">
-                     <img title="Actualizar" class="opcion-table" src="https://cdn-icons-png.flaticon.com/128/942/942748.png" alt="">
-                 </div>
+                
+                    <img title="Actualizar" onclick="mensajeModal(2)" data-toggle="modal" data-target="#modalMsj"  class="opcion-table" src="https://cdn-icons-png.flaticon.com/128/942/942748.png" alt="">
+                 
+                </div>
                  <div class="col">
-                 <img title="Eliminar" class="opcion-table" src="https://cdn-icons-png.flaticon.com/128/3221/3221897.png" alt="">
-                 </div>
+                    
+                    <img title="Eliminar" data-toggle="modal" data-target="#modalMsj" onclick="mensajeModal(1)" class="opcion-table" src="https://cdn-icons-png.flaticon.com/128/3221/3221897.png" alt="">
+                    
+                </div>
                  
             </div>
         </td>
@@ -111,6 +115,20 @@ crearFila = (rut,pnom,appat,apmat,direc,ciudad,fecnac,comp,fecin,reg,cargo,estad
 "nreg": "1009",
 "cargo": "Secretario",
 "estado": "Activo", */
+
+
+const mensajeModal = (p) => {
+    let bodyModal =  document.getElementById('body-msg');
+    if (p === 1) {
+        bodyModal.className = 'alert-danger';
+        bodyModal.innerHTML = 'Ficha eliminada';   
+    }
+    else{
+        bodyModal.className = 'alert-success';
+        bodyModal.innerHTML = 'Ficha actualizada';   
+    }
+    
+}
 
 
 mostrarInformacion = (a) =>{
@@ -197,13 +215,16 @@ const mostrarModal = () =>{
               <div class="row">
                   <div class="col">
                   <div class="form-group">
-                  <label for="my-select"></label>
-                  <select id="my-select" class="form-control" name="">
-                      <option>Text</option>
+                  <label for="select" class="label-option">¿Es nuevo en la institucion?</label>
+                  <select id="select" class="form-control" name="select" onclick="mensajeSelect()">
+                      <option value="1">Si</option>
+                      <option value="2">No</option>
                   </select>
               </div>
                   </div>
                   
+              </div>
+              <div id="div-U">
               </div>
               <div id="div-msg">
               
@@ -224,31 +245,7 @@ const mostrarModal = () =>{
     `
 }
 
-const modalMensaje = () =>{
-    return `
-    <!-- Modal -->
-    <div class="modal fade" id="mensaje" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    `
-}
+
 
 const agregarModal = () =>{
     let body = document.getElementById('body');
@@ -278,3 +275,48 @@ const validarMensaje = () =>{
 
 
 
+/*
+
+sanciones anteriores
+cargos anteriores
+compañia
+ciudad
+
+*/
+
+
+// Usuario antiguo 
+
+const mensajeSelect = () =>{
+
+let select = document.getElementById('select').selectedIndex;
+console.log(select);
+let div = document.getElementById('div-U');
+
+if(select === 1){
+    
+    div.innerHTML = `
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Compañia anterior" id="compañia-u">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Ciudad" id="ciudad-u">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <textarea placeholder="Sanciones anteriores" name="sanciones" id="sanciones" class="form-control" cols="30" rows="10"></textarea>
+        </div>
+        <div class="col">
+            <textarea placeholder="Premios anteriores" name="premios" id="premios" class="form-control" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    
+    
+    `
+}
+else{
+    div.innerHTML = '';
+}
+}
