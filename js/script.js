@@ -194,6 +194,17 @@ const mostrarModal = () =>{
                       <input type="text" id=estado" name="estado" class="form-control" placeholder="Estado">   
                   </div>
               </div>
+              <div class="row">
+                  <div class="col">
+                  <div class="form-group">
+                  <label for="my-select"></label>
+                  <select id="my-select" class="form-control" name="">
+                      <option>Text</option>
+                  </select>
+              </div>
+                  </div>
+                  
+              </div>
               <div id="div-msg">
               
               </div>
@@ -201,8 +212,8 @@ const mostrarModal = () =>{
   
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary" onclick="mensajeDiv()">Crear</button>
+            <button type="button" onclick="mensajeDiv(2)" class="btn btn-success" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" onclick="mensajeDiv(1)">Crear</button>
           </div>
         </div>
       </div>
@@ -244,9 +255,16 @@ const agregarModal = () =>{
     body.innerHTML += mostrarModal(); 
 }
 
-const mensajeDiv = () =>{
-    let div = document.getElementById('div-msg');
-    div.innerHTML = validarMensaje();
+const mensajeDiv = (opcion) =>{
+    if(opcion === 1){
+        let div = document.getElementById('div-msg');
+        div.innerHTML = validarMensaje();
+    }
+    else{
+        let div = document.getElementById('div-msg');
+        div.innerHTML = '';
+    }
+   
 }
 
 const validarMensaje = () =>{

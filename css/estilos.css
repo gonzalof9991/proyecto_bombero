@@ -25,12 +25,14 @@ body {
     padding-top: 2%;
 }
 
-.col-login {
+.login {
     background-color: #ffffff;
-    margin-top: -8%;
     border-radius: 2rem;
     padding-bottom: 10%;
     margin-bottom: 5%;
+    width: 45%;
+    margin-left: 27%;
+    margin-top: 2%;
 }
 
 .form-control {
