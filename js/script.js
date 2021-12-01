@@ -71,7 +71,7 @@ crearFila = (rut,pnom,appat,apmat,direc,ciudad,fecnac,comp,fecin,reg,cargo,estad
     return `
     
     <tr>
-        <th> <button class="form-control  btn-list" > ${rut} </button> </th>
+        <th> <button class="form-control  btn-list" data-toggle="modal" data-target="#modalRut"> ${rut} </button> </th>
         <td>${pnom}</td>
         <td>${appat}</td>
         <td>${apmat}</td>
@@ -319,4 +319,22 @@ if(select === 1){
 else{
     div.innerHTML = '';
 }
+}
+
+
+// Boton imprimir
+
+const imprimir = (p) =>{
+    let div = document.getElementById('imprimir');
+    if (p === 1) {
+        div.innerHTML = `
+        <p class="alert-success p-imprimir">
+            Preparando para imprimir...
+        </p>
+        `     
+    }
+    else{
+        div.innerHTML = '';
+    }
+   
 }
