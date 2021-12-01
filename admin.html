@@ -14,7 +14,7 @@
     <title>Fichas | SGV Primera Compañía</title>
 </head>
 
-<body id="body">
+<body id="body" style="background-color: #f8f8f8;">
 
 
     <!-- Header -->
@@ -23,7 +23,7 @@
         <nav class="navbar navbar-expand-lg ">
             <img src="img/logo-bombero.png" class="img-nav" alt="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <img id="img-menu" src="img/list.png" alt="">
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -51,50 +51,153 @@
 
     </header>
 
-    
-    <!-- Section -->
+    <!-- body -->
     <section>
-        <article>
-            <div class="row">
-                <div class="col-4"></div>
-                <div class="col">
-                    <button class="btn btn-primary form-control" data-toggle="modal" data-target="#exampleModal" type="button" onclick="agregarModal()">Crear Ficha</button>
-                </div>
-                <div class="col-4"></div>
-            </div>
-        </article>
+        <div>
+            <table class="table table-responsive bg-light" style="display: table;" >
+                <thead>
+                <tr>
+                    <th scope="col">Rut</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido Paterno</th>
+                    <th scope="col">Apellido Materno</th>
+                    <th scope="col">Compañia</th>
+                    <th scope="col">Nro registro</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Cambiar Rol</th>
+                </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>16201197-9</td>
+                        <td>Ignacio</td>
+                        <td>Cuturrufo</td>
+                        <td>Gonzalez</td>
+                        <td>Primera</td>
+                        <td>1009</td>
+                        <td>Secretario</td>
+                        <td>Activo</td>
+                        <td>
+                            <div class="row">
+                                <div class="col">
+                                    <img title="Eliminar" onclick="mjeModal(1)" data-toggle="modal" data-target="#modalMsj"  class="opcion-table" src="img/menos-user.png" alt="" style="width: 3.5em;">
+                                </div>  
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>18112342-2</td>
+                        <td>Sebastian</td>
+                        <td>Lobos</td>
+                        <td>Espinosa</td>
+                        <td>Primera</td>
+                        <td>1020</td>
+                        <td>Bombero</td>
+                        <td>Activo</td>
+                        <td>
+                            <div class="row">
+                                <div class="col">
+                                    <img title="Actualizar" onclick="mjeModal(2)" data-toggle="modal" data-target="#modalMsj"  class="opcion-table" src="img/add-user.png" alt="" style="width: 3.5em;">
+                                </div>  
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17552436-k</td>
+                        <td>Mario</td>
+                        <td>Palavecino</td>
+                        <td>Rubio</td>
+                        <td>Primera</td>
+                        <td>1001</td>
+                        <td>Bombero</td>
+                        <td>Activo</td>
+                        <td>
+                            <div class="row">
+                                <div class="col">
+                                    <img title="Actualizar" onclick="mjeModal(2)" data-toggle="modal" data-target="#modalMsj"  class="opcion-table" src="img/add-user.png" alt="" style="width: 3.5em;">
+                                </div>  
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5134650-k</td>
+                        <td>Rene</td>
+                        <td>Bruna</td>
+                        <td>Jopia</td>
+                        <td>Primera</td>
+                        <td>0979</td>
+                        <td>Bombero</td>
+                        <td>Activo</td>
+                        <td>
+                            <div class="row">
+                                <div class="col">
+                                    <img title="Actualizar" onclick="mjeModal(2)" data-toggle="modal" data-target="#modalMsj"  class="opcion-table" src="img/add-user.png" alt="" style="width: 3.5em;">
+                                </div>  
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>21261317-5</td>
+                        <td>Javiera</td>
+                        <td>Guerrero</td>
+                        <td>Castillo</td>
+                        <td>Primera</td>
+                        <td>1045</td>
+                        <td>Bombero</td>
+                        <td>Activo</td>
+                        <td>
+                            <div class="row">
+                                <div class="col">
+                                    <img title="Actualizar" onclick="mjeModal(2)" data-toggle="modal" data-target="#modalMsj"  class="opcion-table" src="img/add-user.png" alt="" style="width: 3.5em;">
+                                </div>  
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>21823682-2</td>
+                        <td>Renata</td>
+                        <td>Lastra</td>
+                        <td>Muñóz</td>
+                        <td>Primera</td>
+                        <td>1053</td>
+                        <td>Bombero</td>
+                        <td>Activo</td>
+                        <td>
+                            <div class="row">
+                                <div class="col">
+                                    <img title="Actualizar" onclick="mjeModal(2)" data-toggle="modal" data-target="#modalMsj"  class="opcion-table" src="img/add-user.png" alt="" style="width: 3.5em;">
+                                </div>  
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16533982-9</td>
+                        <td>Fernando</td>
+                        <td>Frez</td>
+                        <td>Meriño</td>
+                        <td>Primera</td>
+                        <td>1009</td>
+                        <td>Bombero</td>
+                        <td>Activo</td>
+                        <td>
+                            <div class="row">
+                                <div class="col">
+                                    <img title="Actualizar" onclick="mjeModal(2)" data-toggle="modal" data-target="#modalMsj"  class="opcion-table" src="img/add-user.png" alt="" style="width: 3.5em;">
+                                </div>  
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
-        <table class="table table-responsive bg-light">
-            <thead>
-              <tr>
-                <th scope="col">Rut</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Apellido Paterno</th>
-                <th scope="col">Apellido Materno</th>
-                <th scope="col">Direccion</th>
-                <th scope="col">Ciudad</th>
-                <th scope="col">Fecha nacimiento</th>
-                <th scope="col">Compañia</th>
-                <th scope="col">Fecha ingreso</th>
-                <th scope="col">Nro registro</th>
-                <th scope="col">Cargo</th>
-                <th scope="col">Estado</th>
-                <th scope="col">Opcion</th>
-              </tr>
-            </thead>
-            <tbody id = "tbody">
-             
-              
-            </tbody>
-          </table>
-       
-    
    
  
   
    
     <!-- Footer -->
-    <footer >
+    <footer>
         <section>
             <a href="#" >Política de privacidad</a> 
             <a href="#" >Aviso legal</a> 
@@ -103,7 +206,16 @@
     </footer>
 
   
-   
+     <!-- Modal -->
+  <div class="modal fade" id="modalMsj" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body" id="body-msg">
+          Ficha eliminada
+        </div>
+      </div>
+    </div>
+  </div>
   
 
   

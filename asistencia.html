@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg ">
             <img src="img/logo-bombero.png" class="img-nav" alt="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <img id="img-menu" src="https://cdn-icons.flaticon.com/png/128/4238/premium/4238680.png?token=exp=1638228301~hmac=b42b8a3efb83f0aa08ea982834f13f4b" alt="">
+              <img id="img-menu" src="img/list.png" alt="">
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -35,7 +35,7 @@
                         <a class="nav-link" href="solicitud.html">Solicitudes <span class="sr-only">(current)</span></a>
                     </div>
                     <li class="nav-item ">
-                        <a class="nav-link" href="solicitud.html">Registrar Asistencia <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="asistencia.html">Registrar Asistencia <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="login.html">Salir <span class="sr-only">(current)</span></a>
@@ -48,27 +48,26 @@
     </header>
 
     <!-- Section -->
-    <section>
-       
-        <article>
-            <div class="jumbotron text-center">
-                <h1 class="display-4">Nuestra Historia</h1>
-                <img class="img-jumbo" src="https://scontent-scl2-1.xx.fbcdn.net/v/t1.6435-9/88166267_2594238160682795_5732278101606400000_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=973b4a&_nc_ohc=Wq2aKHYEGYsAX9ynMJ3&_nc_ht=scontent-scl2-1.xx&oh=4463b3c7ce81bedd89b6499b7c34c296&oe=61BF08F8"
-                    alt="">
-                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, temporibus sed nam fuga optio voluptatem necessitatibus debitis quisquam inventore non? Excepturi, delectus velit. Dolorem eaque omnis quibusdam corrupti obcaecati
-                    tempora! Iusto velit culpa, nostrum ducimus laboriosam mollitia perspiciatis modi, ipsum neque est laborum cumque accusantium laudantium quibusdam labore? Minima quo quas ex minus nulla debitis autem dolores et velit voluptatum! Id
-                    a quod molestias natus qui? Reprehenderit nemo sequi quibusdam inventore vel, enim distinctio aliquid culpa sed quisquam fugit sunt. Doloribus minima quisquam quia, vero doloremque temporibus in id! Distinctio?</p>
-
+    <section class="jumbotron text-center">
+        <div class="form-group">
+            <label for="select" class="label-option" style="margin-top: 0.5em; font-size: 2em; font-weight: bold; color: #214090">Tipo de Asistencia</label>
+            <div style="display: flex; justify-content: center; align-items: center; height: 5em;">
+                <select id="select" class="form-control" name="select" onclick="mensajeSelect()" style="width: 10em;">
+                    <option value="1">Emergencias</option>
+                    <option value="2">Reuniones</option>
+                    <option value="3">Academias</option>
+                </select>
             </div>
-        </article>
-
-        <article>
-
-        </article>
-
+        </div>
+            <div style="margin-top: 2em; text-align: center;">
+                <img style="width: 20em;" id="qr" src="img/scanner.png" alt="">
+                <p style="margin-top: 2em; font-size: 2em; font-weight: bold; color: #214090">
+                    Acerque el código QR al lector
+                </p>
+            </div>
     </section>
 
-    <!-- Footer -->
+
     <!-- Footer -->
     <footer class="footer text-faded text-center py-5">
 

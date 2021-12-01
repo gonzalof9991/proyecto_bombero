@@ -130,6 +130,20 @@ const mensajeModal = (p) => {
     
 }
 
+const mjeModal = (p) => {
+    let bodyModal =  document.getElementById('body-msg');
+    if (p === 1) {
+        bodyModal.className = 'alert-danger';
+        bodyModal.innerHTML = 'Rol eliminado';   
+    }
+    else{
+        bodyModal.className = 'alert-success';
+        bodyModal.innerHTML = 'Rol otorgado';   
+    }
+    
+}
+
+
 
 mostrarInformacion = (a) =>{
     let array = a;
