@@ -41,3 +41,11 @@ header {
     color: white;
     text-align: center;
 }
+
+.nav-item .nav-link.active,
+.nav-item .show>.nav-link {
+    background: #1f3e8f;
+    border-radius: 1rem;
+    color: white;
+    text-align: center;
+}
