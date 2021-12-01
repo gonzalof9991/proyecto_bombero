@@ -84,19 +84,19 @@ crearFila = (rut,pnom,appat,apmat,direc,ciudad,fecnac,comp,fecin,reg,cargo,estad
         <td>${cargo}</td>
         <td>${estado}</td>
         <td>
-            <div class="row">
                  <div class="col">
                 
                     <img title="Actualizar" onclick="mensajeModal(2)" data-toggle="modal" data-target="#modalMsj"  class="opcion-table" src="https://cdn-icons-png.flaticon.com/128/942/942748.png" alt="">
                  
                 </div>
+        </td>
+        <td>
                  <div class="col">
                     
                     <img title="Eliminar" data-toggle="modal" data-target="#modalMsj" onclick="mensajeModal(1)" class="opcion-table" src="https://cdn-icons-png.flaticon.com/128/3221/3221897.png" alt="">
                     
                 </div>
                  
-            </div>
         </td>
     </tr>
     
