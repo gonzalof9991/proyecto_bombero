@@ -144,18 +144,18 @@ h5{
 }
 
 .buscador{
-    width: 33%;
+    width: 100%;
     background: white;
-    margin-left: 67%;
+    margin-left: 0%;
     border-radius: 4px;
     margin-top: -10px;
 }
 
 .label-busq{
-    
-    margin-left: 26%;
+    margin-left: 78%;
     color: #214090;
-    margin-top: 10px;
+    margin-top: 19px;
+    font-size: 17px;
 }
 
 
