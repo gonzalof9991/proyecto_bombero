@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg ">
             <img src="img/logo-bombero.png" class="img-nav" alt="">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <img id="img-menu" src="https://cdn-icons.flaticon.com/png/128/4238/premium/4238680.png?token=exp=1638228301~hmac=b42b8a3efb83f0aa08ea982834f13f4b" alt="">
+                <img id="img-menu" src="img/list.png" alt="">
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -49,23 +49,63 @@
 
     <!-- Section -->
     <section>
-       
-        <article>
-            <div class="jumbotron text-center">
-                <h1 class="display-4">Nuestra Historia</h1>
-                <img class="img-jumbo" src="https://scontent-scl2-1.xx.fbcdn.net/v/t1.6435-9/88166267_2594238160682795_5732278101606400000_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=973b4a&_nc_ohc=Wq2aKHYEGYsAX9ynMJ3&_nc_ht=scontent-scl2-1.xx&oh=4463b3c7ce81bedd89b6499b7c34c296&oe=61BF08F8"
-                    alt="">
-                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, temporibus sed nam fuga optio voluptatem necessitatibus debitis quisquam inventore non? Excepturi, delectus velit. Dolorem eaque omnis quibusdam corrupti obcaecati
-                    tempora! Iusto velit culpa, nostrum ducimus laboriosam mollitia perspiciatis modi, ipsum neque est laborum cumque accusantium laudantium quibusdam labore? Minima quo quas ex minus nulla debitis autem dolores et velit voluptatum! Id
-                    a quod molestias natus qui? Reprehenderit nemo sequi quibusdam inventore vel, enim distinctio aliquid culpa sed quisquam fugit sunt. Doloribus minima quisquam quia, vero doloremque temporibus in id! Distinctio?</p>
-
-            </div>
-        </article>
-
-        <article>
-
-        </article>
-
+        <div class="jumbotron text-center">
+            <table class="table table-responsive bg-light" style="display: table;" >
+                <thead>
+                <tr>
+                    <th scope="col">Rut</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido Paterno</th>
+                    <th scope="col">Apellido Materno</th>
+                    <th scope="col">Solicitud</th>
+                </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>18112342-2</td>
+                        <td>Sebastian</td>
+                        <td>Lobos</td>
+                        <td>Espinosa</td>
+                        <td>Primera</td>
+                        <td>
+                            <div class="row">
+                                <div class="col">
+                                    <img title="Solicitud" data-toggle="modal" data-target="#modalMail"  class="opcion-table" src="img/mail.png" alt="" style="width: 3.5em;">
+                                </div>  
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>17552436-k</td>
+                        <td>Mario</td>
+                        <td>Palavecino</td>
+                        <td>Rubio</td>
+                        <td>Primera</td>
+                        <td>
+                            <div class="row">
+                                <div class="col">
+                                    <img title="Solicitud" data-toggle="modal" data-target="#modalMail"  class="opcion-table" src="img/email.png" alt="" style="width: 3.5em;">
+                                </div>  
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>16533982-9</td>
+                        <td>Fernando</td>
+                        <td>Frez</td>
+                        <td>Meriño</td>
+                        <td>Primera</td>
+                        <td>
+                            <div class="row">
+                                <div class="col">
+                                    <img title="Solicitud" data-toggle="modal" data-target="#modalMail"  class="opcion-table" src="img/email.png" alt="" style="width: 3.5em;">
+                                </div>  
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -82,6 +122,24 @@
         </div>
 
     </footer>
+
+
+         <!-- Modal -->
+    <div class="modal fade" id="modalMail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" id="body-msg">
+                    <div class="col">
+                        <p>Solicitud</p>
+                        <p>Fecha: 01/12/2021</p>
+                    </div>
+                    <div class="col" style="margin-top: 2em;">
+                        <p>Se solicita cambio de Dirección a "Los Carrera 2020"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
